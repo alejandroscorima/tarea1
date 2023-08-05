@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let item of listaItems">{{ item.nombre }}</li>
+</ul>
+
+<form (submit)="agregarItem()">
+
+  <input type="text" [(ngModel)]="nombreItem" name="nombreItem" required>
+  <button type="submit">Agregar</button>
+</form>
